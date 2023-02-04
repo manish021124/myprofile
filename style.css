@@ -1,0 +1,490 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    height: 100%;
+}
+
+.star{
+    position: fixed;
+    z-index: 1;
+}
+
+.home{
+    background-color: #1B1B1B;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar{
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    z-index: 4;
+}
+
+.name{
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+
+#bar{
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+  
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1{
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2{
+    opacity: 0;
+}
+  
+.change .bar3{
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#list{
+    width: 100%;
+    margin-top: 20px;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+}
+
+#list ul{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style-type: none;
+}
+
+#list ul li{
+    padding: 10px;
+}
+  
+#list ul li a{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+  
+#list ul li a:hover{
+    color: gray;
+}
+
+.intro{
+    color: #ffffff;
+    height: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro img{
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.myName{
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.stat, .location{
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.icons{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.icons .tooltip{
+    position: relative;
+}
+
+.icons .tooltip .tooltiptext{
+    visibility: hidden;
+    width: 100px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 2;
+    top: 160%;
+    left: 50%;
+    margin-left: -50px;
+}
+  
+.icons .tooltip .tooltiptext::after{
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent black transparent;
+}
+  
+.icons .tooltip:hover .tooltiptext{
+    visibility: visible;
+}
+
+.icons span a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 26px;
+}
+
+.icons span a i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding: 7px 0;
+    border-radius: 50%;
+
+}
+
+.icons span a i:hover{
+    background-color: #ffffff;
+    color: #000000;
+    position: relative;
+    z-index: 3;
+    transform: translate(0, -5px);
+}
+
+section{
+    background-image: linear-gradient(#1B1B1B, #ffffff, #1B1B1B);
+}
+
+.skill{
+    padding: 100px 0;
+    text-align: center;
+}
+
+.skillHead, .projectHead, .contactHead{
+    color: #000000;
+    padding: 80px 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skill-pics{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill-pics div{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    padding: 20px 0;
+    background-color: #ffffff;
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skill-pics img{
+    margin: 20px 20px;
+}
+
+.html-logo{
+    width: 80px;
+}
+
+.css-logo{
+    width: 98px;
+}
+
+.js-logo{
+    width: 68px;
+}
+
+.bootstrap-logo{
+    width: 90px;
+}
+
+.projects{
+    padding-top: 60px;
+    padding-bottom: 150px;
+}
+
+.projects .container{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+}
+
+.projects-box{
+    margin: 30px;
+    max-width: 500px;
+    height: auto;
+    margin-top: 60px;
+    color: #ffffff;
+    border-radius: 5px;
+    background-color: #1E1E1E;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-desc{
+    padding: 15px;
+    text-align: center;
+}
+
+.project-desc-head{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.project-description{
+    padding-top: 10px;
+}
+
+.projects-body img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+button{
+    padding: 15px;
+    margin: 40px auto 0;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-size: 18px;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+}
+
+button:hover{
+    background-color: #000000;
+    border: 1px solid #000000;
+}
+
+.projects button{
+    margin-top: 20px;
+}
+
+.contact{
+    padding-bottom: 150px;
+}
+
+form{
+    background-color: #1E1E1E;
+    margin: auto;
+    padding: 80px 40px;
+    margin-top: 60px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+form input, form textarea{
+    border: 1px solid rgb(87, 86, 86);
+    color: #ffffff;
+    margin: 10px 0;
+    padding: 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+form input:hover, form textarea:hover{
+    border: 1px solid #ffffff;
+}
+
+form textarea{
+    resize: vertical;
+}
+
+.contact button{
+    border: 1px solid rgb(87, 86, 86);
+}
+
+.footer-top{
+    background-color: #1B1B1B;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+}
+
+.footer-head{
+    padding-top: 100px;
+    padding-bottom: 30px;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+footer ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul li{
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer ul li a:hover{
+    color: grey;
+}
+
+.contactme ul li a:hover{
+    text-decoration: underline;
+}
+
+.sitemap{
+    margin-bottom: 60px;
+}
+
+.footer-bottom{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 16px;
+}
+
+
+
+
+@media only screen and (min-width: 768px){
+    #bar{
+        visibility: hidden;
+    }
+
+    #list{
+        position: absolute;
+        top: -30px;
+        right: 20px;
+    }
+
+    #list ul{
+        float: right;
+    }
+
+    #list ul li{
+        float: left;
+        padding: 10px 20px;
+    }
+
+    .intro img{
+        width: 200px;
+    }
+
+    .skillHead, .projectHead, .contactHead{
+        font-size: 60px;
+    }
+
+    .skill-pics{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .skill-pics div{
+        background: transparent;
+        box-shadow: none;
+    }
+    
+    .skill-pics div:hover{
+        z-index: 2;
+        background-color: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        transform: translate(0, -25px);
+    }
+
+    .projects .container{
+        grid-template-columns: auto auto;
+    }
+
+    .projects-body img{
+        height: 250px;
+    }
+
+    form{
+        padding: 130px 40px;
+    }
+
+    .contact button{
+        color: rgb(87, 86, 86);
+    }
+    
+    .contact button:hover{
+        border: 1px solid #000000;
+        color: #ffffff;
+    }
+
+    .footer-top{
+        flex-direction: row;
+    }
+
+    .contactme{
+        padding-left: 25%;
+    }
+
+    .contactme, .sitemap{
+        flex-grow: 5;
+    }
+}
+
+
