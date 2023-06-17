@@ -123,16 +123,25 @@ function scrollShowNav(){
     prevScrollpos = currentScrollPos;
 }
 
-function sendEmail(){
-    Email.send({
-        SecureToken: "c8be2c5f-b2dd-4000-aecc-fda98d60b667",
-        To : 'maneeshbalami@gmail.com',
-        From : document.getElementById("formEmail").value,
-        Subject : "New Contact Form Enquiry",
-        Body : "Name: " + document.getElementById("formName").value
-            + "<br> Emai: " + document.getElementById("formEmail").value
-            + "<br> Message: " + document.getElementById("formMessage").value
-    }).then(
-        message => alert("Message Sent Successfully.")
-    );
-}
+function sendMail() {
+    var params = {
+      name: document.getElementById("form_name").value,
+      email: document.getElementById("form_email").value,
+      message: document.getElementById("message").value,
+    };
+  
+    const serviceID = "service_4vfts4c";
+    const templateID = "template_wwpybww";
+  
+      emailjs.send(serviceID, templateID, params)
+      .then(res=>{
+          document.getElementById("form_name").value = "";
+          document.getElementById("form_email").value = "";
+          document.getElementById("message").value = "";
+          console.log(res);
+          alert("Your message was sent successfully!!")
+  
+      })
+      .catch(err=>console.log(err));
+  
+  }
