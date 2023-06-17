@@ -150,11 +150,11 @@
 
         <div class="contact" id="contact">
             <div class="contactHead">Contact</div>
-            <form onsubmit="sendEmail(); reset(); return false;">
+            <form>
                 <input type="text" id="formName" name="formName" placeholder="Your Name" required>
                 <input type="email" id="formEmail" name="formEmail" placeholder="Email id" required>
                 <textarea id="formMessage" rows="4" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
+                <button type="submit" onclick="sendMail()">Send</button>
             </form>
         </div>
     </section>
@@ -206,7 +206,12 @@
 
     
     <script src="script.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("MbGcUsA6qR0R5enbx");
+        })();
+    </script>
     <script src="https://kit.fontawesome.com/938811ee99.js" crossorigin="anonymous"></script>
 </body>
 </html>
