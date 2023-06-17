@@ -124,7 +124,7 @@ function scrollShowNav(){
 }
 
 function sendMail() {
-    var params = {
+    let params = {
       name: document.getElementById("formName").value,
       email: document.getElementById("formEmail").value,
       message: document.getElementById("formMessage").value,
