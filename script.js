@@ -125,9 +125,9 @@ function scrollShowNav(){
 
 function sendMail() {
     var params = {
-      name: document.getElementById("form_name").value,
-      email: document.getElementById("form_email").value,
-      message: document.getElementById("message").value,
+      name: document.getElementById("formName").value,
+      email: document.getElementById("formEmail").value,
+      message: document.getElementById("formMessage").value,
     };
   
     const serviceID = "service_4vfts4c";
@@ -135,9 +135,9 @@ function sendMail() {
   
       emailjs.send(serviceID, templateID, params)
       .then(res=>{
-          document.getElementById("form_name").value = "";
-          document.getElementById("form_email").value = "";
-          document.getElementById("message").value = "";
+          document.getElementById("formName").value = "";
+          document.getElementById("formEmail").value = "";
+          document.getElementById("formMessage").value = "";
           console.log(res);
           alert("Your message was sent successfully!!")
   
