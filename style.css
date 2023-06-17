@@ -316,7 +316,7 @@ button:hover{
     padding-bottom: 150px;
 }
 
-form{
+.form{
     background-color: #1E1E1E;
     margin: auto;
     padding: 80px 40px;
@@ -331,7 +331,7 @@ form{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-form input, form textarea{
+.form input, .form textarea{
     border: 1px solid rgb(87, 86, 86);
     color: #ffffff;
     margin: 10px 0;
@@ -341,11 +341,11 @@ form input, form textarea{
     background-color: transparent;
 }
 
-form input:hover, form textarea:hover{
+.form input:hover, .form textarea:hover{
     border: 1px solid #ffffff;
 }
 
-form textarea{
+.form textarea{
     resize: vertical;
 }
 
@@ -461,7 +461,7 @@ footer ul li a:hover{
         height: 250px;
     }
 
-    form{
+    .form{
         padding: 130px 40px;
     }
 
