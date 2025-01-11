@@ -193,15 +193,10 @@ body{
 }
 
 section{
-    background-image: linear-gradient(#1B1B1B, #ffffff, #1B1B1B);
+    background-image: linear-gradient(to bottom, #1B1B1B 0%, #3E3E3E 25%, #ffffff 50%, #3E3E3E 75%, #1B1B1B 100%);
 }
 
-.skill{
-    padding: 100px 0;
-    text-align: center;
-}
-
-.skillHead, .projectHead, .contactHead{
+.servicesHead, .projectHead, .contactHead{
     color: #000000;
     padding: 80px 0;
     font-size: 40px;
@@ -209,42 +204,74 @@ section{
     text-align: center;
 }
 
-.skill-pics{
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    flex-direction: column;
+.services {
+    padding: 100px 20px;
 }
 
-.skill-pics div{
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    margin: 20px;
-    padding: 20px 0;
-    background-color: #ffffff;
-    z-index: 2;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.services-list {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 500px));
+    gap: 50px;
+    justify-content: center;
 }
 
-.skill-pics img{
-    margin: 20px 20px;
+.service-card {
+    background-color: #2A2A2A;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 3;
 }
 
-.html-logo{
+.service-icon {
     width: 80px;
+    height: 80px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.css-logo{
-    width: 98px;
+.service-icon img {
+    width: 100%;
+    border-radius: 50%;
 }
 
-.js-logo{
-    width: 68px;
+.service-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
 }
 
-.bootstrap-logo{
-    width: 90px;
+.service-skills {
+    list-style-type: none;
+    padding: 0;
+    font-size: 14px;
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+
+.service-skills li {
+    margin-bottom: 8px;
+    gap: 8px;
+}
+
+.service-skills li::before {
+    content: '✔';
+    color: #4CAF50;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.service-description {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #d1d1d1;
+    text-align: justify;
+    line-height: 1.6;
 }
 
 .projects{
@@ -260,7 +287,7 @@ section{
 
 .projects-box{
     margin: 30px;
-    max-width: 500px;
+    max-width: 700px;
     height: auto;
     margin-top: 60px;
     color: #ffffff;
@@ -272,7 +299,7 @@ section{
 }
 
 .project-desc{
-    padding: 15px;
+    padding: 30px 15px;
     text-align: center;
 }
 
@@ -281,8 +308,29 @@ section{
     font-weight: 700;
 }
 
+.tools-used{
+    font-size: 14px;
+    margin-top: 5px;
+}
+
 .project-description{
-    padding-top: 10px;
+    padding: 15px 0;
+}
+
+.project-desc a {
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #ffffff;    
+}
+
+.project-desc a:hover {
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .projects-body img{
@@ -351,6 +399,13 @@ button:hover{
 
 .contact button{
     border: 1px solid rgb(87, 86, 86);
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .footer-top{
@@ -432,25 +487,8 @@ footer ul li a:hover{
         width: 200px;
     }
 
-    .skillHead, .projectHead, .contactHead{
+    .servicesHead, .projectHead, .contactHead{
         font-size: 60px;
-    }
-
-    .skill-pics{
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .skill-pics div{
-        background: transparent;
-        box-shadow: none;
-    }
-    
-    .skill-pics div:hover{
-        z-index: 2;
-        background-color: #ffffff;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        transform: translate(0, -25px);
     }
 
     .projects .container{
@@ -458,7 +496,7 @@ footer ul li a:hover{
     }
 
     .projects-body img{
-        height: 250px;
+        height: 350px;
     }
 
     .form{

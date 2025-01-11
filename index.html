@@ -29,7 +29,7 @@
                         <a href="#home"><h6>HOME</h6></a>
                     </li>
                     <li>
-                        <a href="#skill"><h6>SKILLS</h6></a>
+                        <a href="#services"><h6>SERVICES</h6></a>
                     </li>
                     <li>
                         <a href="#projects"><h6>PROJECTS</h6></a>
@@ -46,7 +46,7 @@
             </div>
             <div class="shortIntro">
                 <div class="myName">Manish Balami</div>
-                <div class="stat">Student becoming a Developer</div>
+                <div class="stat">Web Developer</div>
                 <div class="location">Hetauda, Nepal</div>
                 <div class="icons">
                     <span class="tooltip">
@@ -73,62 +73,180 @@
     </div>
 
     <section>
-        <div class="skill" id="skill">
-            <div class="skillHead">Skills</div>
-            <div class="skill-pics">
-                <div class="html-pic">
-                    <img class="html-logo" src="images/logo-html.png" alt="HTML5 logo">
+        <div class="services" id="services">
+            <div class="servicesHead">Services</div>
+            <div class="services-list">
+                <!-- Frontend Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/frontend.png" alt="Frontend Development Icon">
+                    </div>
+                    <h3 class="service-title">Frontend Development</h3>
+                    <ul class="service-skills">
+                        <li>React.js | Next.js | TypeScript</li>
+                        <li>HTML | CSS | JavaScript</li>
+                        <li>Tailwind CSS | Bootstrap</li>
+                    </ul>
+                    <p class="service-description">
+                        Expertise in building visually appealing, responsive, and dynamic web interfaces using modern frontend technologies. 
+                        I focus on crafting seamless user experiences using React.js, Next.js, TypeScript, and modern CSS frameworks.
+                    </p>
+                    
                 </div>
-                <div class="css-pic">
-                    <img class="css-logo" src="images/css3-logo.png" alt="CSS3 logo">
+                <!-- Backend Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/backend.jpg" alt="Backend Development Icon">
+                    </div>
+                    <h3 class="service-title">Backend Development</h3>
+                    <ul class="service-skills">
+                        <li>Django | Django Rest Framework (DRF)</li>
+                    </ul>
+                    <p class="service-description">
+                        I specialize in building robust and scalable backend applications using Django and Django Rest Framework (DRF). 
+                        These tools allow me to create RESTful APIs and handle business logic with efficiency.
+                    </p>
+                    
                 </div>
-                <div class="js-pic">
-                    <img class="js-logo" src="images/js-logo.png" alt="JS logo">
-                </div>
-                <div class="bootstrap-pic">
-                    <img class="bootstrap-logo" src="images/bootstrap-logo.png" alt="Bootstrap logo">
+                <!-- Fullstack Development -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="images/fullstack.png" alt="Fullstack Development Icon">
+                    </div>
+                    <h3 class="service-title">Fullstack Development</h3>
+                    <ul class="service-skills">
+                        <li>React.js | Next.js | TypeScript</li>
+                        <li>Django | Django Rest Framework (DRF)</li>
+                        <li>Tailwind CSS | Bootstrap</li>
+                    </ul>
+                    <p class="service-description">
+                        Full-stack development using django templates for the frontend, and django for the backend. 
+                        I also use Django Rest Framework (DRF) to handle the backend API, and integrate it seamlessly with modern JavaScript tools like React.js and Next.js for a comprehensive solution.
+                    </p>
                 </div>
             </div>
         </div>
-            
+        
         <div class="projects" id="projects">
             <div class="projectHead">Projects</div>
             <div class="container">
                 <div class="projects-box">
                     <div class="projects-body">
+                        <img src="images/bloguer.png" alt="bloguer">
+                    </div>
+                    <div class="project-desc">
+                        <div class="project-desc-head">bloguer - A blogging website</div>
+                        <p class="tools-used">DRF | Next.js | JWT | axios | redux-toolkit | tailwind CSS | docker | git</p>
+                        <div class="project-description">Bloguer is a full-stack blogging platform designed for 
+                            creating, managing, and sharing blog posts. It leverages modern technologies like Django 
+                            Rest Framework (DRF) for the backend and Next.js for the frontend. The project includes 
+                            features like authentication with JWT, state management using Redux Toolkit, and containerization 
+                            with Docker.</div>
+                        <a target="_blank" href="https://github.com/manish021124/bloguer">
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects-box">
+                    <div class="projects-body">
                         <img src="images/gyapu1.jpg" alt="JS Projects">
                     </div>
                     <div class="project-desc">
-                        <div class="project-desc-head">Gyapu  — An e-commerse site</div>
-                        <div class="project-description">This is a cloned site of gyapu (an e-commerse site of nepal).</div>
-                        <a target="_blank" href="https://manish021124.github.io/gyapu-e-commerce_site/">
-                            <button>View</button>
+                        <div class="project-desc-head">Django Ecommerce site</div>
+                        <p class="tools-used">django | django templates | CSS | JavaScript | Bootstrap</p>
+                        <div class="project-description">This project demonstrates my skills in full-stack development, using Django for the backend and 
+                            Django templates for rendering dynamic pages, along with frontend technologies like HTML, CSS, 
+                            JavaScript, and Bootstrap to replicate the site's design and features.</div>                        
+                        <a target="_blank" href="https://github.com/manish021124/ecommerce_django">
+                            View Code
+                        </a>
+                    </div>
+                </div>          
+                
+                <div class="projects-box">
+                    <div class="projects-body">
+                        <img src="images/grocery.png" alt="grocery list">
+                    </div>
+                    <div class="project-desc">
+                        <div class="project-desc-head">Grocery List</div>
+                        <p class="tools-used">django | django template | HTML | CSS | JavaScript</p>
+                        <div class="project-description">Grocery List is a simple web application for managing and organizing grocery items. 
+                            Built with Django for the backend and Django Templates for rendering dynamic pages, it allows users to add, edit, 
+                            and delete items from their grocery list. The frontend is designed using HTML, CSS, and JavaScript for a smooth user experience.</div>
+                        <a target="_blank" href="https://github.com/manish021124/django_grocery_list">
+                            View Code
                         </a>
                     </div>
                 </div>
 
                 <div class="projects-box">
                     <div class="projects-body">
-                        <img src="images/portfolio1-1.jpg" alt="JS Projects">
+                        <img src="images/react_projects.png" alt="React Projects">
+                    </div>
+                    <div class="project-desc">
+                        <div class="project-desc-head">React Projects</div>
+                        <p class="tools-used">React.js | HTML | CSS | JavaScript</p>
+                        <div class="project-description">This collection of React projects demonstrates my frontend development skills. 
+                            It includes a variety of projects built using React.js, HTML, CSS, and JavaScript, showcasing my ability to 
+                            build dynamic user interfaces and interactive web applications.</div>                        
+                        <a target="_blank" href="https://github.com/manish021124/react-projects">
+                            View Code
+                        </a>
+                    </div>
+                </div>   
+
+                <div class="projects-box">
+                    <div class="projects-body">
+                        <img src="images/gyapu1.jpg" alt="gyapu">
+                    </div>
+                    <div class="project-desc">
+                        <div class="project-desc-head">Gyapu - An e-commerce site</div>
+                        <p class="tools-used">HTML | CSS | JavaScript | Bootstrap</p>
+                        <div class="project-description">This project is a clone of the Gyapu e-commerce site, 
+                            a popular online shopping platform in Nepal. It showcases frontend development skills and 
+                            replicates key features and design elements of the original site.</div>
+                        <a target="_blank" href="https://manish021124.github.io/gyapu-e-commerce_site/">
+                            Visit Website
+                        </a>
+                        <a target="_blank" href="https://github.com/manish021124/gyapu-e-commerce_site">
+                            View Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projects-box">
+                    <div class="projects-body">
+                        <img src="images/portfolio1-1.jpg" alt="portfolio1">
                     </div>
                     <div class="project-desc">
                         <div class="project-desc-head">Portfolio Example-1</div>
-                        <div class="project-description">This is a simple cloned portfolio from dribbble.</div>
+                        <p class="tools-used">HTML | CSS | JavaScript | Bootstrap</p>
+                        <div class="project-description">This project is a simple portfolio clone inspired by a design from Dribbble. 
+                            It demonstrates design replication skills and frontend development expertise.</div>
                         <a target="_blank" href="https://manish021124.github.io/portfolio1/">
-                            <button>View</button>
+                            Visit Website
+                        </a>
+                        <a target="_blank" href="https://github.com/manish021124/portfolio1">
+                            View Code
                         </a>
                     </div>
                 </div>
 
                 <div class="projects-box">
                     <div class="projects-body">
-                        <img src="images/portfolio2-1.jpg" alt="JS Projects">
+                        <img src="images/portfolio2-1.jpg" alt="portfolio2">
                     </div>
                     <div class="project-desc">
                         <div class="project-desc-head">Portfolio Example-2</div>
-                        <div class="project-description">This is another simple cloned portfolio from dribbble using HTML, CSS, BOOTSTRAP and JAVASCRIPT.</div>
+                        <p class="tools-used">HTML | CSS | JavaScript | Bootstrap</p>
+                        <div class="project-description">This is another portfolio clone inspired by a Dribbble design. 
+                            It showcases design replication and frontend development skills.</div>
                         <a target="_blank" href="https://manish021124.github.io/portfolio2/">
-                            <button>View</button>
+                            Visit Website
+                        </a>
+                        <a target="_blank" href="https://github.com/manish021124/portfolio2">
+                            View Code
                         </a>
                     </div>
                 </div>
@@ -139,9 +257,14 @@
                     </div>
                     <div class="project-desc">
                         <div class="project-desc-head">JS DOM Projects</div>
-                        <div class="project-description">This is simple JS projects that I developed while learning JS. It contain nine beginner projects using HTML, CSS and JS.</div>
+                        <p class="tools-used">HTML | CSS | JavaScript</p>
+                        <div class="project-description">This is a collection of simple JavaScript projects developed 
+                            during my learning journey. It includes nine beginner-friendly, showcasing fundamental web development concepts.</div>
                         <a target="_blank" href="https://manish021124.github.io/frontend_projects/">
-                            <button>View</button>
+                            Visit Website
+                        </a>
+                        <a target="_blank" href="https://github.com/manish021124/frontend_projects">
+                            View Code
                         </a>
                     </div>
                 </div>
@@ -150,12 +273,13 @@
 
         <div class="contact" id="contact">
             <div class="contactHead">Contact</div>
-            <div class="form">
+            <form onsubmit="sendMail(event)" class="form">
                 <input type="text" id="formName" name="formName" placeholder="Your Name" required>
                 <input type="email" id="formEmail" name="formEmail" placeholder="Email id" required>
                 <textarea id="formMessage" rows="4" placeholder="Your message" required></textarea>
-                <button onclick="sendMail()">Send</button>
-            </div>
+                <button type="submit">Send</button>
+                <p id="error-message" class="error"></p>
+            </form>
         </div>
     </section>
 
@@ -186,7 +310,7 @@
                         <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#skill">Skills</a>
+                        <a href="#services">Services</a>
                     </li>
                     <li>
                         <a href="#projects">Projects</a>
@@ -198,7 +322,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            &copy 2022 Manish Balami. All Rights Reserved
+            &copy 2025 Manish Balami. All Rights Reserved
         </div>
     </footer>
 
@@ -209,7 +333,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            emailjs.init("jHAVkKChHS8F6q9XP");
+            emailjs.init("UiXltQ2naa0rEpuU4");
         })();
     </script>
     <script src="https://kit.fontawesome.com/938811ee99.js" crossorigin="anonymous"></script>
